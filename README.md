@@ -5,7 +5,7 @@
 
 ## At the time of writing this text (02/28/24), the bot consists of 582 discord servers mainly dedicated to the game crossout.
 
-![Bots propile](https://imgur.com/K8PsvDH.png)
+![Bots propile](https://imgur.com/K8PsvDH.png "Bots profile")
 
 ## An example of how the team works to view the price of an item.
 
