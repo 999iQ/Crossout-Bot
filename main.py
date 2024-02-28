@@ -8,7 +8,6 @@ translator = Translator()
 from replit import db
 import dataBaseNames
 import CrossDBot
-import keep_alive
 
 from requests_html import AsyncHTMLSession
 session = AsyncHTMLSession()
