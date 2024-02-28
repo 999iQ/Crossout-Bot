@@ -19,15 +19,8 @@ HELP_IMAGE = 'https://media.discordapp.net/attachments/1060658288523477032/10898
 
 AD_message = f'https://media.discordapp.net/attachments/1053950932662112279/1142788855125258280/ad.png' # МОЯ РЕКЛАМКА
 
-# чел BiKend_2.0#3693 купил рекламу на 2 недели (31 марта до 14 апреля| 18апр-2мая| 16mai-30mai| 21-28авг)
-# 300 + 420 + 250 + 200rub.
-
-# декоратор (события) у функций определнные названия
-
 @client.event
 async def on_ready():
-	############################################################################################################
-
 	print(f'Bot {client.user} is ready to work!')
 	await client.change_presence(activity=disnake.Game(name=f'/помощь | {len(client.guilds)} серверов!'))
 
@@ -35,11 +28,12 @@ async def on_ready():
 @commands.guild_only()
 @client.slash_command(description='Сравнение ТТХ орудий от 2 до 5 шт.')
 async def сравнить(inter: disnake.ApplicationCommandInteraction,
-						name1: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 1 орудия', name='предмет1'),
-						name2: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 2 орудия', name='предмет2'),
-						name3: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 3 орудия', name='предмет3', default=''),
-						name4: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 4 орудия', name='предмет4', default=''),
-						name5: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 5 орудия', name='предмет5', default='')):
+		name1: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 1 орудия', name='предмет1'),
+		name2: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 2 орудия', name='предмет2'),
+		name3: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 3 орудия', name='предмет3', default=''),
+		name4: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 4 орудия', name='предмет4', default=''),
+		name5: str = commands.Param(autocomplete=dataBaseNames.weaponsAutocomplet, description='Название 5 орудия', name='предмет5', default='')):
+			
 	await inter.response.defer() # БОТ ДУМАЕТ ...
 	names = [name1, name2, name3, name4, name5]
 	list_names = [str(i) for i in names if i != '']
