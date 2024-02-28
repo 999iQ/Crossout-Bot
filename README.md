@@ -9,4 +9,4 @@
 
 ## An example of how the team works to view the price of an item.
 
-![Bots result](https://imgur.com/XuSr6qr.png)
+![Bots work](https://imgur.com/XuSr6qr.png "Bots work")
